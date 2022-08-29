@@ -1,7 +1,10 @@
 import { FaRandom } from 'react-icons/fa'
+import { RandomButton } from './styles'
 
 export const Button = () => {
   return (
-    <button><span>Random</span> <FaRandom /></button>
+    <RandomButton>
+      <span>Random</span> <FaRandom />
+    </RandomButton>
   )
 }
