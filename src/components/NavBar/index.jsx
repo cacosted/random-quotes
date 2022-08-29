@@ -1,7 +1,9 @@
+import { StyledNavBar } from './styles'
+
 export const NavBar = ({ children }) => {
   return (
-    <nav>
+    <StyledNavBar>
       {children}
-    </nav>
+    </StyledNavBar>
   )
 }
