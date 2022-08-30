@@ -24,6 +24,11 @@ export const Details = styled.figcaption`
   }
 `
 
+export const StyledLink = styled.a`
+  text-decoration: none;
+  color: ${colors.main}
+`
+
 export const Label = styled.p`
   font-size: .8rem;
   ${props => props.id === labelId.author ? titleCss : ''};
