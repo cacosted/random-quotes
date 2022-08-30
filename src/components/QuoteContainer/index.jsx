@@ -1,10 +1,9 @@
-import { Quote } from '../Quote'
 import { QuoteHolder } from './styles'
 
-export const QuoteContainer = () => {
+export const QuoteContainer = ({ children }) => {
   return (
     <QuoteHolder>
-      <Quote />
+      {children}
     </QuoteHolder>
   )
 }
