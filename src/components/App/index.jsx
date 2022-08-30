@@ -1,21 +1,13 @@
-import { Container } from '../Container'
-import { NavBar } from '../NavBar'
-import { Button } from '../Button'
-import { QuoteContainer } from '../QuoteContainer'
-import { Quote } from '../Quote'
-import { useQuote } from '../../hooks/useQuote'
-
+import { Home } from '../../pages/Home'
+import { Author } from '../../pages/Author'
+import { NotFound } from '../../pages/NotFound'
+import { Switch, Route } from 'wouter'
 export const App = () => {
-  const { quote, setRandomQuote } = useQuote()
   return (
-    <Container>
-      <NavBar>
-        <Button action={setRandomQuote} />
-      </NavBar>
-      <QuoteContainer>
-        <Quote quote={quote} />
-      </QuoteContainer>
-    </Container>
-
+    <Switch>
+      <Route path='/' component={Home} />
+      <Route path='/author/:name' component={Author} />
+      <Route><NotFound /></Route>
+    </Switch>
   )
 }
