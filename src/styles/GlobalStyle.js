@@ -11,4 +11,11 @@ export const GlobalStyle = createGlobalStyle`
     font-family: ${fonts.regular};
     color: ${colors.main}
   }
+
+  h1,
+  h2,
+  figure,
+  blockquote {
+    margin: 0;
+  }
 `
