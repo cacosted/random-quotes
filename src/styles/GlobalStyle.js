@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
   h1,
   h2,
+  p,
   figure,
   blockquote {
     margin: 0;

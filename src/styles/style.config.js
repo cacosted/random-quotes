@@ -9,6 +9,8 @@ export const weights = {
 
 export const colors = {
   main: '#333333',
-  dark: '#000',
+  black: '#000',
+  white: '#FFF',
+  light: '#828282',
   accent: '#F7DF94'
 }
