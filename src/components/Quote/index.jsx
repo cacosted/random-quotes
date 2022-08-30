@@ -1,13 +1,17 @@
 import { QuoteDetails } from '../QuoteDetails'
 import { StyledQuote } from './styles'
-export const Quote = ({ text, details }) => {
+import { useQuote } from '../../hooks/useQuote'
+
+export const Quote = () => {
+  const { quote } = useQuote()
+
   return (
     <>
       <StyledQuote>
-        {text}
+        {quote.text}
       </StyledQuote>
       <QuoteDetails>
-        {details}
+        {quote.details}
       </QuoteDetails>
     </>
   )
