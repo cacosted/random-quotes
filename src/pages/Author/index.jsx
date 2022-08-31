@@ -11,8 +11,8 @@ export const Author = ({ params }) => {
   return (
     <div>
       <NavBar>
-        <Link to='/'><FaArrowLeft /></Link>
-        <h1>{name}</h1>
+        <Link to='/'><a><FaArrowLeft /></a></Link>
+        <a>{name}</a>
       </NavBar>
       {quoteList.map(item => {
         return (
