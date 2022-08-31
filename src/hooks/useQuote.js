@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react'
-import { getRandomQuote, getAuthorQuotes } from '../services/getQuoteData'
+import { getRandomQuote } from '../services/getQuoteData'
 
 export const useQuote = () => {
   const [quote, setQuote] = useState({ text: null, details: {} })
-  const [quoteList, setQuoteList] = useState([])
   const setRandomQuote = () => {
     getRandomQuote()
       .then(quote => {
@@ -18,20 +17,12 @@ export const useQuote = () => {
       })
   }
 
-  const setAuthorQuotes = (author) => {
-    getAuthorQuotes(author)
-      .then(data => {
-        setQuoteList(data.results)
-      })
-  }
   useEffect(() => {
     setRandomQuote()
   }, [])
 
-  return {
+  return [
     quote,
-    setRandomQuote,
-    quoteList,
-    setAuthorQuotes
-  }
+    setRandomQuote
+  ]
 }

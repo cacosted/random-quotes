@@ -6,7 +6,7 @@ import { QuoteContainer } from '../../components/QuoteContainer'
 import { Quote } from '../../components/Quote'
 
 export const Home = () => {
-  const { quote, setRandomQuote } = useQuote()
+  const [quote, setRandomQuote] = useQuote()
   return (
     <Container>
       <NavBar>
