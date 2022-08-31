@@ -3,7 +3,7 @@ import { getRandomQuote, getAuthorQuotes } from '../services/getQuoteData'
 
 export const useQuote = () => {
   const [quote, setQuote] = useState({ text: null, details: {} })
-  const [quoteList, setQuoteList] = useState({})
+  const [quoteList, setQuoteList] = useState([])
   const setRandomQuote = () => {
     getRandomQuote()
       .then(quote => {
@@ -21,8 +21,7 @@ export const useQuote = () => {
   const setAuthorQuotes = (author) => {
     getAuthorQuotes(author)
       .then(data => {
-        console.log(data)
-        // setQuoteList(data)
+        setQuoteList(data.results)
       })
   }
   useEffect(() => {
