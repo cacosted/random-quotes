@@ -1,6 +1,7 @@
 # Random quotes with React
 
-![Preview Design](/)
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/57645180/187590787-a75c7c5b-1d74-4a2d-b0af-06f28a33fbf9.png">
+<img width="500" alt="image" src="https://user-images.githubusercontent.com/57645180/187590861-4dc0d7bf-48bd-4b09-a36b-f50a91877391.png">
 
 
 This is a solution of random quote generator challenge from [Dev Challenges](http://devchallenges.io).
